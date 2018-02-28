@@ -1,0 +1,49 @@
+<!ELEMENT cinema (projections, films, acteurs)>
+<!ELEMENT projections (projection*)>
+<!ELEMENT projection (dateProjection, numeroSalle, filmProj, acteurs*)>
+<!ELEMENT dateProjection (#PCDATA)>
+<!ELEMENT numeroSalle (#PCDATA)>
+<!ELEMENT filmProj (#PCDATA)>
+<!ATTLIST filmProj filmId IDREF #REQUIRED>
+<!ELEMENT acteurs (acteur)>
+<!ELEMENT acteur (#PCDATA)>
+<!ATTLIST acteur acteurId IDREF #REQUIRED>
+<!ELEMENT films (film*)>
+<!ELEMENT film (titre, synopsis, duree, critique, genre, motsCles, langages*, photo)>
+<!ATTLIST film id ID #REQUIRED>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT synopsis (#PCDATA)>
+<!ELEMENT duree (#PCDATA)>
+<!ELEMENT critique (#PCDATA)>
+<!ELEMENT genres (genre)>
+<!ELEMENT genre EMPTY>
+<!ATTLIST genre genreId IDREF #IMPLIED>
+<!ELEMENT motsCle (motCle*)>
+<!ELEMENT motCle EMPTY>
+<!ATTLIST motCle motCleId IDREF #IMPLIED>
+<!ELEMENT langages (langage)>
+<!ELEMENT langage EMPTY>
+<!ATTLIST langage langageId IDREF #IMPLIED>
+<!ELEMENT photo EMPTY>
+<!ELEMENT acteurs (acteur*)>
+<!ELEMENT acteur (nom, nomNaissance, biographie, sexe, dateNaissance, dateDeces)>
+<!ATTLIST acteur id ID #REQUIRED>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT nomNaissance (#PCDATA)>
+<!ELEMENT biographie (#PCDATA)>
+<!ELEMENT sexe (#PCDATA)>
+<!ATTLIST sexe type (masculin|feminin|transgenre|shemale) #REQUIRED>
+<!ELEMENT dateNaissace (#PCDATA)>
+<!ELEMENT dateDeces (#PCDATA)>
+<!ELEMENT motsCle (motCle)>
+<!ELEMENT motCle (label)>
+<!ATTLIST motCle id ID #REQUIRED>
+<!ELEMENT label (#PCDATA)>
+<!ELEMENT genres (genre*)>
+<!ELEMENT genre (labal)>
+<!ATTLIST genre id ID #REQUIRED>
+<!ELEMENT label (#PCDATA)>
+<!ELEMENT langages (langage)>
+<!ELEMENT language (label)>
+<!ATTLIST language id ID #REQUIRED>
+<!ELEMENT label (#PCDATA)>
