@@ -5,9 +5,9 @@
 <!ELEMENT numeroSalle (#PCDATA)>
 <!ELEMENT filmProj (#PCDATA)>
 <!ATTLIST filmProj filmId IDREF #REQUIRED>
-<!ELEMENT acteurs (acteur)>
-<!ELEMENT acteur (#PCDATA)>
-<!ATTLIST acteur acteurId IDREF #REQUIRED>
+<!ELEMENT acteursProj (acteur)>
+<!ELEMENT acteurProj (#PCDATA)>
+<!ATTLIST acteurProj acteurProjId IDREF #REQUIRED>
 <!ELEMENT films (film*)>
 <!ELEMENT film (titre, synopsis, duree, critique, genre, motsCles, langages*, photo)>
 <!ATTLIST film id ID #REQUIRED>
@@ -15,15 +15,15 @@
 <!ELEMENT synopsis (#PCDATA)>
 <!ELEMENT duree (#PCDATA)>
 <!ELEMENT critique (#PCDATA)>
-<!ELEMENT genres (genre)>
-<!ELEMENT genre EMPTY>
-<!ATTLIST genre genreId IDREF #IMPLIED>
-<!ELEMENT motsCle (motCle*)>
-<!ELEMENT motCle EMPTY>
-<!ATTLIST motCle motCleId IDREF #IMPLIED>
-<!ELEMENT langages (langage)>
-<!ELEMENT langage EMPTY>
-<!ATTLIST langage langageId IDREF #IMPLIED>
+<!ELEMENT genresFilm (genre)>
+<!ELEMENT genreFilm EMPTY>
+<!ATTLIST genreFilm genreFilmId IDREF #IMPLIED>
+<!ELEMENT motsCleAct (motCle*)>
+<!ELEMENT motCleAct EMPTY>
+<!ATTLIST motCleAct motCleActId IDREF #IMPLIED>
+<!ELEMENT langagesAct (langage)>
+<!ELEMENT langageAct EMPTY>
+<!ATTLIST langageAct langageActId IDREF #IMPLIED>
 <!ELEMENT photo EMPTY>
 <!ELEMENT acteurs (acteur*)>
 <!ELEMENT acteur (nom, nomNaissance, biographie, sexe, dateNaissance, dateDeces)>
@@ -38,12 +38,12 @@
 <!ELEMENT motsCle (motCle)>
 <!ELEMENT motCle (label)>
 <!ATTLIST motCle id ID #REQUIRED>
-<!ELEMENT label (#PCDATA)>
+<!ELEMENT labelMc (#PCDATA)>
 <!ELEMENT genres (genre*)>
 <!ELEMENT genre (labal)>
 <!ATTLIST genre id ID #REQUIRED>
-<!ELEMENT label (#PCDATA)>
+<!ELEMENT labelGe (#PCDATA)>
 <!ELEMENT langages (langage)>
 <!ELEMENT language (label)>
 <!ATTLIST language id ID #REQUIRED>
-<!ELEMENT label (#PCDATA)>
+<!ELEMENT labelLa (#PCDATA)>

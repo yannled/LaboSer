@@ -1,12 +1,14 @@
+<?xml version="1.0" ?>
+<!DOCTYPE cinema SYSTEM "pathe.dtd">
 <cinema>
 
     <projections>
         <projection>
-            <dateProjection> </dateProjections>
+            <dateProjection> </dateProjection>
             <numeroSalle> </numeroSalle>
             <filmProj filmId="y">
             <acteursProj> 
-                <acteur acteurId="y">
+                <acteur acteurProjId="y">
             </acteursProj>
         </projection>
     </projections>
@@ -17,12 +19,12 @@
             <synopsis> </synopsis>
             <duree> </duree>
             <critique> </critique>
-            <genres>
-                 <genre genreId='y'>
+            <genresFilm>
+                 <genreFilm genreFilmId='y'>
             </genres>
-            <motsCle>
-                <motCle motCleId='y'>
-            </motsCle>
+            <motsCleFilm>
+                <motCleFilm motCleFilmId='y'>
+            </motsCleFilm>
             <langages>
                 <langage langageId='y'>
             </langages>
@@ -43,19 +45,19 @@
 
     <motsCle>
         <motCle id='x'>
-            <label></label>
+            <labelMc></labelMc>
         </motCle>
     </motsCle>
 
     <genres>
         <genre id='x'>
-            <label></label>
+            <labelGe></labelGe>
         </genre>
     </genres>
 
     <langages>
         <langage id='x'>
-            <label></label>
+            <labelLa></labelLa>
         </langage>
     </langages>
 
