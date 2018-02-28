@@ -5,9 +5,9 @@
             <dateProjection> </dateProjections>
             <numeroSalle> </numeroSalle>
             <filmProj filmId="y">
-            <acteurs> 
+            <acteursProj> 
                 <acteur acteurId="y">
-            </acteurs>
+            </acteursProj>
         </projection>
     </projections>
 
