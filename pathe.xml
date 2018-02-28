@@ -4,60 +4,85 @@
 
     <projections>
         <projection>
-            <dateProjection> </dateProjection>
-            <numeroSalle> </numeroSalle>
-            <filmProj filmId="y">
+            <dateProjection>28-02-2018</dateProjection>
+            <numeroSalle>1</numeroSalle>
+            <filmProj filmId="1">
             <acteursProj> 
-                <acteur acteurProjId="y">
+                <acteur acteurProjId="1">
+                <acteur acteurProjId="2">
             </acteursProj>
         </projection>
     </projections>
 
     <films>
-        <film id="x">
-            <titre> </titre>
-            <synopsis> </synopsis>
-            <duree> </duree>
-            <critique> </critique>
+        <film id="1">
+            <titre>Shutter island</titre>
+            <synopsis>In 1954, a U.S. Marshal investigates the disappearance of a murderer, who escaped from a hospital for the criminally insane.</synopsis>
+            <duree>130</duree>
+            <critique></critique>
             <genresFilm>
-                 <genreFilm genreFilmId='y'>
+                 <genreFilm genreFilmId='1'>
+                 <genreFilm genreFilmId='2'>
             </genres>
             <motsCleFilm>
-                <motCleFilm motCleFilmId='y'>
+                <motCleFilm motCleFilmId='1'>
+                <motCleFilm motCleFilmId='2'>
+                <motCleFilm motCleFilmId='3'>
             </motsCleFilm>
             <langages>
-                <langage langageId='y'>
+                <langage langageId='1'>
+                <langage langageId='2'>
             </langages>
             <photo url="http://docr.iict.ch/imdb/xxxxxx.jpg"/>
         </film>
     </films>
 
     <acteurs>
-        <acteur id='x'>
-            <nom></nom>
-            <nomNaissance> </nomNaissance>
-            <biographie> </biographie>
-            <sexe type="Masculin">
-            <dateNaissance> </dateNaissance>
-            <dateDeces> </dateDeces>
+        <acteur id='1'>
+            <nom>Leonardo DiCaprio</nom>
+            <nomNaissance>DiCaprio</nomNaissance>
+            <biographie>coucou</biographie>
+            <sexe type="masculin">
+            <dateNaissance>1-1-2001</dateNaissance>
+            <dateDeces>2-1-2001</dateDeces>
+        </acteur>
+        <acteur id='2'>
+            <nom>Emily Mortimero</nom>
+            <nomNaissance>Mortimer</nomNaissance>
+            <biographie>coucou</biographie>
+            <sexe type="feminin">
+            <dateNaissance>1-1-2001</dateNaissance>
+            <dateDeces>2-1-2001</dateDeces>
         </acteur>
     </acteurs>
 
     <motsCle>
-        <motCle id='x'>
-            <labelMc></labelMc>
+        <motCle id='1'>
+            <labelMc>cool</labelMc>
+        </motCle>
+        <motCle id='2'>
+            <labelMc>dur a comprendre</labelMc>
+        </motCle>
+        <motCle id='3'>
+            <labelMc>sympa</labelMc>
         </motCle>
     </motsCle>
 
     <genres>
-        <genre id='x'>
-            <labelGe></labelGe>
+        <genre id='1'>
+            <labelGe>psycologique</labelGe>
+        </genre>
+        <genre id='2'>
+            <labelGe>thriller</labelGe>
         </genre>
     </genres>
 
     <langages>
-        <langage id='x'>
-            <labelLa></labelLa>
+        <langage id='1'>
+            <labelLa>Français</labelLa>
+        </langage>
+        <langage id='2'>
+            <labelLa>Anglais</labelLa>
         </langage>
     </langages>
 
