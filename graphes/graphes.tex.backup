@@ -1,0 +1,164 @@
+\documentclass[a4paper,10pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.markings}
+\usepackage[dvipsnames]{xcolor}
+% Title Page
+\title{}
+\author{Yann Lederrey}
+
+\begin{document}
+\maketitle
+
+\definecolor{orange}{HTML}{ff9900}
+
+
+
+\tikzset{
+    photon/.style={decorate, decoration={snake}, draw=green},
+    normal/.style={draw=black}
+}
+
+\begin{center}
+\begin{tikzpicture}[
+  attribut/.style={rectangle,draw,fill=green!20},
+  normal/.style={rectangle,draw,fill=blue!20,rounded corners=.8ex},
+  root/.style={rectangle,draw,fill=red!20},
+  transform canvas={scale=0.8},
+  sibling distance=7em,]
+  \node [root]{cinema}
+    child {node[normal] {projections} [normal]
+      child { node[normal] {projection} [normal]
+	child { node[normal] {dateProjection} [normal]}
+	child { node[normal] {numeroSalle} [normal]}
+	child { node[normal] {filmProj} [normal]
+	  child { node[attribut] {filmId} [normal]}
+	  }
+	child { node[normal] {acteursProj} [normal]
+	  child { node[normal] {acteurProj} [normal]
+	    child { node[attribut] {acteurProjId} [normal]}
+	    child { node[attribut] {nomRole} [normal]}
+	    child { node[attribut] {placeRole} [normal]}
+	  }
+	}
+      }
+    };
+\end{tikzpicture}
+\end{center}
+
+\vspace{170px}
+
+\begin{center}
+\begin{tikzpicture}[
+  attribut/.style={rectangle,draw,fill=green!20},
+  normal/.style={rectangle,draw,fill=blue!20,rounded corners=.8ex},
+  
+  filmId/.style={rectangle,draw,fill=orange!20,rounded corners=.8ex},
+  acteurId/.style={rectangle,draw,fill=rose!20,rounded corners=.8ex},
+  critiqueId/.style={rectangle,draw,fill=cyan!20,rounded corners=.8ex},
+  genreId/.style={rectangle,draw,fill=brun!20,rounded corners=.8ex},
+  motCleId/.style={rectangle,draw,fill=violet!20,rounded corners=.8ex},
+  langageId/.style={rectangle,draw,fill=jaune!20,rounded corners=.8ex},
+  
+  root/.style={rectangle,draw,fill=red!20},
+  transform canvas={scale=0.8},
+  sibling distance=7em,]
+  \node [root]{cinema}
+  child {node[normal] {films} [normal]
+    child { node[normal] {film} [normal]
+      child { node[attribut] {filmId} [normal]}
+      child { node[normal] {titre} [normal]}
+      child { node[normal] {synopsis} [normal]}
+      child { node[normal] {duree} [normal]}
+      child { node[normal] {critiqueFilm} [normal]
+	child { node[attribut] {critiquesFilmId} [normal]}
+      }
+      child { node[normal] {genresFilm} [normal]
+	child { node[normal] {genreFilm} [normal]
+	  child { node[attribut] {genreFilmId} [normal]}
+	}
+      }
+      child { node[normal] {motsCleFilm} [normal]
+	child { node[normal] {motCleFilm} [normal]
+	  child { node[attribut] {motCleFilmId} [normal]}
+	}
+      }
+      child { node[normal] {langagesFilm} [normal]
+	child { node[normal] {langageFilm} [normal]
+	  child { node[attribut] {langageFilmId} [normal]}
+	  }
+	}
+      child { node[normal] {photo} [normal]}
+    }
+  };
+\end{tikzpicture}
+\end{center}
+
+\vspace{170px}
+
+\begin{center}
+\begin{tikzpicture}[
+  attribut/.style={rectangle,draw,fill=green!20},
+  normal/.style={rectangle,draw,fill=blue!20,rounded corners=.8ex},
+  root/.style={rectangle,draw,fill=red!20},
+  transform canvas={scale=0.8},
+  sibling distance=7em,]
+  \node [root]{cinema}
+   child { node[normal] {acteurs} [normal]
+    child { node[normal] {acteur} [normal]
+      child { node[attribut] {acteurId} [normal]}
+      child { node[normal] {nom} [normal]}
+      child { node[normal] {nomNaissance} [normal]}
+      child { node[normal] {biographie} [normal]}
+      child { node[normal] {sexe} [normal]
+	child { node[attribut] {type(enum)} [normal]}
+      }
+      child { node[normal] {dateNaissance} [normal]}
+      child { node[normal] {dateDeces} [normal]}
+    }
+   };
+\end{tikzpicture}
+\end{center}
+
+\vspace{170px}
+
+\begin{center}
+\begin{tikzpicture}[
+  attribut/.style={rectangle,draw,fill=green!20},
+  normal/.style={rectangle,draw,fill=blue!20,rounded corners=.8ex},
+  root/.style={rectangle,draw,fill=red!20},
+  transform canvas={scale=0.8},
+  sibling distance=7em,]
+  \node [root]{cinema}
+  child { node[normal] {motsCleFilm} [normal]
+    child { node[normal] {motCle} [normal]
+      child { node[attribut] {motCleId} [normal]}
+      child { node[normal] {labelMc} [normal]}
+    }
+  }
+  child { node[normal] {genres} [normal]
+      child { node[normal] {genre} [normal]
+      child { node[attribut] {genreId} [normal]}
+      child { node[normal] {labelGe} [normal]}
+    }
+  }
+  child { node[normal] {langages} [normal]
+    child { node[normal] {langage} [normal]
+    child { node[attribut] {langageId} [normal]}
+      child { node[normal] {labelLa} [normal]}
+    }
+  }
+  child { node[normal] {critiques} [normal]
+    child { node[normal] {critique} [normal]
+      child { node[attribut] {critiqueId} [normal]}
+      child { node[normal] {texte} [normal]}
+      child { node[normal] {note} [normal]}
+    }
+  };
+\end{tikzpicture}
+\end{center}
+
+
+\end{document}          
