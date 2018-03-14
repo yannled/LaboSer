@@ -1,0 +1,218 @@
+LOCATOR
+ SYS ID: file:/home/joel/Switchdrive/HEIG/S-4/SER/LaboSer/pathe.xml
+
+START DOCUMENT
+<?xml version='1.0' encoding='UTF-8'?>
+    ELEMENT: <cinema>
+        ELEMENT: <projections>
+            ELEMENT: <projection>
+                ELEMENT: <dateProjection>
+                CHARS:   28-02-2018
+                END_ELM: </>
+                ELEMENT: <numeroSalle>
+                CHARS:   1
+                END_ELM: </>
+                ELEMENT: <filmProj
+                   ATTR: filmId	"film_1"
+                >
+                END_ELM: </>
+                ELEMENT: <acteursProj>
+                    ELEMENT: <acteurProj
+                       ATTR: acteurProjId	"act_1"
+                       ATTR: nomRole	"lolilol"
+                       ATTR: placeRole	"1"
+                    >
+                    END_ELM: </>
+                    ELEMENT: <acteurProj
+                       ATTR: acteurProjId	"act_2"
+                       ATTR: nomRole	"lolilol"
+                       ATTR: placeRole	"1"
+                    >
+                    END_ELM: </>
+                END_ELM: </>
+            END_ELM: </>
+        END_ELM: </>
+        ELEMENT: <films>
+            ELEMENT: <film
+               ATTR: filmId	"film_1"
+            >
+                ELEMENT: <titre>
+                CHARS:   Shutter island
+                END_ELM: </>
+                ELEMENT: <synopsis>
+                CHARS:   In 1954, a U.S. Marshal investigates the disappearance of a murderer, who escaped from a hospital for the criminally insane.
+                END_ELM: </>
+                ELEMENT: <duree>
+                CHARS:   130
+                END_ELM: </>
+                ELEMENT: <critiqueFilm
+                   ATTR: critiqueFilmId	"crit_1"
+                >
+                END_ELM: </>
+                ELEMENT: <genresFilm>
+                    ELEMENT: <genreFilm
+                       ATTR: genreFilmId	"genre_1"
+                    >
+                    END_ELM: </>
+                    ELEMENT: <genreFilm
+                       ATTR: genreFilmId	"genre_2"
+                    >
+                    END_ELM: </>
+                END_ELM: </>
+                ELEMENT: <motsCleFilm>
+                    ELEMENT: <motCleFilm
+                       ATTR: motCleFilmId	"motCle_1"
+                    >
+                    END_ELM: </>
+                    ELEMENT: <motCleFilm
+                       ATTR: motCleFilmId	"motCle_2"
+                    >
+                    END_ELM: </>
+                    ELEMENT: <motCleFilm
+                       ATTR: motCleFilmId	"motCle_3"
+                    >
+                    END_ELM: </>
+                END_ELM: </>
+                ELEMENT: <langagesFilm>
+                    ELEMENT: <langageFilm
+                       ATTR: langageFilmId	"lang_1"
+                    >
+                    END_ELM: </>
+                    ELEMENT: <langageFilm
+                       ATTR: langageFilmId	"lang_2"
+                    >
+                    END_ELM: </>
+                END_ELM: </>
+                ELEMENT: <photo
+                   ATTR: url	"http://docr.iict.ch/imdb/xxxxxx.jpg"
+                >
+                END_ELM: </>
+            END_ELM: </>
+        END_ELM: </>
+        ELEMENT: <acteurs>
+            ELEMENT: <acteur
+               ATTR: acteurId	"act_1"
+            >
+                ELEMENT: <nom>
+                CHARS:   Leonardo DiCaprio
+                END_ELM: </>
+                ELEMENT: <nomNaissance>
+                CHARS:   DiCaprio
+                END_ELM: </>
+                ELEMENT: <biographie>
+                CHARS:   coucou
+                END_ELM: </>
+                ELEMENT: <sexe
+                   ATTR: type	"masculin"
+                >
+                END_ELM: </>
+                ELEMENT: <dateNaissance>
+                CHARS:   1-1-2001
+                END_ELM: </>
+                ELEMENT: <dateDeces>
+                CHARS:   2-1-2001
+                END_ELM: </>
+            END_ELM: </>
+            ELEMENT: <acteur
+               ATTR: acteurId	"act_2"
+            >
+                ELEMENT: <nom>
+                CHARS:   Emily Mortimero
+                END_ELM: </>
+                ELEMENT: <nomNaissance>
+                CHARS:   Mortimer
+                END_ELM: </>
+                ELEMENT: <biographie>
+                CHARS:   coucou
+                END_ELM: </>
+                ELEMENT: <sexe
+                   ATTR: type	"feminin"
+                >
+                END_ELM: </>
+                ELEMENT: <dateNaissance>
+                CHARS:   1-1-2000
+                END_ELM: </>
+                ELEMENT: <dateDeces>
+                CHARS:   2-1-2001
+                END_ELM: </>
+            END_ELM: </>
+        END_ELM: </>
+        ELEMENT: <motsCle>
+            ELEMENT: <motCle
+               ATTR: motCleId	"motCle_1"
+            >
+                ELEMENT: <labelMc>
+                CHARS:   cool
+                END_ELM: </>
+            END_ELM: </>
+            ELEMENT: <motCle
+               ATTR: motCleId	"motCle_2"
+            >
+                ELEMENT: <labelMc>
+                CHARS:   dur a comprendre
+                END_ELM: </>
+            END_ELM: </>
+            ELEMENT: <motCle
+               ATTR: motCleId	"motCle_3"
+            >
+                ELEMENT: <labelMc>
+                CHARS:   sympa
+                END_ELM: </>
+            END_ELM: </>
+        END_ELM: </>
+        ELEMENT: <genres>
+            ELEMENT: <genre
+               ATTR: genreId	"genre_1"
+            >
+                ELEMENT: <labelGe>
+                CHARS:   psycologique
+                END_ELM: </>
+            END_ELM: </>
+            ELEMENT: <genre
+               ATTR: genreId	"genre_2"
+            >
+                ELEMENT: <labelGe>
+                CHARS:   thriller
+                END_ELM: </>
+            END_ELM: </>
+        END_ELM: </>
+        ELEMENT: <langages>
+            ELEMENT: <langage
+               ATTR: langageId	"lang_1"
+            >
+                ELEMENT: <labelLa>
+                CHARS:   Francais
+                END_ELM: </>
+            END_ELM: </>
+            ELEMENT: <langage
+               ATTR: langageId	"lang_2"
+            >
+                ELEMENT: <labelLa>
+                CHARS:   Anglais
+                END_ELM: </>
+            END_ELM: </>
+        END_ELM: </>
+        ELEMENT: <critiques>
+            ELEMENT: <critique
+               ATTR: critiqueId	"crit_1"
+            >
+                ELEMENT: <texte>
+                CHARS:   vraiment geniale
+                END_ELM: </>
+                ELEMENT: <note>
+                CHARS:   10
+                END_ELM: </>
+            END_ELM: </>
+            ELEMENT: <critique
+               ATTR: critiqueId	"crit_2"
+            >
+                ELEMENT: <texte>
+                CHARS:   Pas top
+                END_ELM: </>
+                ELEMENT: <note>
+                CHARS:   4
+                END_ELM: </>
+            END_ELM: </>
+        END_ELM: </>
+    END_ELM: </>
+END DOCUMENT

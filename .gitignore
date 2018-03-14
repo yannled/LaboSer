@@ -1,0 +1,12 @@
+# latex files
+*.aux
+*.log
+*.synctex.gz
+*.toc
+
+# intelliJ files
+*.iml
+.idea
+
+# tmp files
+*.swp

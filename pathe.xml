@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE cinema SYSTEM "pathe.dtd">
 <cinema>
 
@@ -79,7 +79,7 @@
 
     <langages>
         <langage langageId='lang_1'>
-            <labelLa>Français</labelLa>
+            <labelLa>Francais</labelLa>
         </langage>
         <langage langageId='lang_2'>
             <labelLa>Anglais</labelLa>
@@ -88,7 +88,7 @@
 
     <critiques>
         <critique critiqueId="crit_1">
-            <texte>vraiment géniale</texte>
+            <texte>vraiment geniale</texte>
             <note>10</note>
         </critique>
         <critique critiqueId="crit_2">
