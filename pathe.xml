@@ -8,8 +8,18 @@
             <numeroSalle>1</numeroSalle>
             <filmProj filmId="film_1"/>
             <acteursProj>
-                <acteurProj acteurProjId="act_1" nomRole="lolilol" placeRole="1"/>
-                <acteurProj acteurProjId="act_2" nomRole="lolilol" placeRole="1"/>
+                <acteurProj acteurProjId="act_1" nomRole="principale" placeRole="1"/>
+                <acteurProj acteurProjId="act_2" nomRole="secondaire" placeRole="1"/>
+            </acteursProj>
+        </projection>
+
+        <projection>
+            <dateProjection>24-03-2018</dateProjection>
+            <numeroSalle>1</numeroSalle>
+            <filmProj filmId="film_2"/>
+            <acteursProj>
+                <acteurProj acteurProjId="act_1" nomRole="principale" placeRole="1"/>
+                <acteurProj acteurProjId="act_2" nomRole="secondaire" placeRole="1"/>
             </acteursProj>
         </projection>
     </projections>
@@ -22,11 +32,9 @@
             <critiqueFilm critiqueFilmId='crit_1'/>
             <genresFilm>
                 <genreFilm genreFilmId='genre_1'/>
-                <genreFilm genreFilmId='genre_2'/>
             </genresFilm>
             <motsCleFilm>
                 <motCleFilm motCleFilmId='motCle_1'/>
-                <motCleFilm motCleFilmId='motCle_2'/>
                 <motCleFilm motCleFilmId='motCle_3'/>
             </motsCleFilm>
             <langagesFilm>
@@ -35,36 +43,55 @@
             </langagesFilm>
             <photo url="http://docr.iict.ch/imdb/xxxxxx.jpg"/>
         </film>
+
+        <film filmId="film_2">
+            <titre>Inception</titre>
+            <synopsis>Dans un futur proche, les États-Unis ont développé ce qui est appelé le « rêve partagé », une méthode permettant d'influencer l'inconscient d'une victime pendant qu'elle rêve,</synopsis>
+            <duree>148</duree>
+            <critiqueFilm critiqueFilmId='crit_1'/>
+            <genresFilm>
+                <genreFilm genreFilmId='genre_2'/>
+            </genresFilm>
+            <motsCleFilm>
+                <motCleFilm motCleFilmId='motCle_2'/>
+                <motCleFilm motCleFilmId='motCle_3'/>
+            </motsCleFilm>
+            <langagesFilm>
+                <langageFilm langageFilmId='lang_2'/>
+            </langagesFilm>
+            <photo url="http://docr.iict.ch/imdb/xxxxxx.jpg"/>
+        </film>
     </films>
+
 
     <acteurs>
         <acteur acteurId='act_1'>
             <nom>Leonardo DiCaprio</nom>
             <nomNaissance>DiCaprio</nomNaissance>
-            <biographie>coucou</biographie>
+            <biographie>Grandissant dans les quartiers populaires de Los Angeles tels que Los Feliz puis Hollywood</biographie>
             <sexe type="masculin"/>
-            <dateNaissance>1-1-2001</dateNaissance>
-            <dateDeces>2-1-2001</dateDeces>
+            <dateNaissance>11.11.1974</dateNaissance>
+            <dateDeces></dateDeces>
         </acteur>
         <acteur acteurId='act_2'>
             <nom>Emily Mortimero</nom>
             <nomNaissance>Mortimer</nomNaissance>
-            <biographie>coucou</biographie>
+            <biographie>Emily Mortimer est née à Finsbury Park, à Londres</biographie>
             <sexe type="feminin"/>
-            <dateNaissance>1-1-2000</dateNaissance>
-            <dateDeces>2-1-2001</dateDeces>
+            <dateNaissance>1.12.1971</dateNaissance>
+            <dateDeces></dateDeces>
         </acteur>
     </acteurs>
 
     <motsCle>
         <motCle motCleId='motCle_1'>
-            <labelMc>cool</labelMc>
+            <labelMc>Combat</labelMc>
         </motCle>
         <motCle motCleId='motCle_2'>
-            <labelMc>dur a comprendre</labelMc>
+            <labelMc>humour</labelMc>
         </motCle>
         <motCle motCleId='motCle_3'>
-            <labelMc>sympa</labelMc>
+            <labelMc>peur</labelMc>
         </motCle>
     </motsCle>
 
@@ -88,11 +115,11 @@
 
     <critiques>
         <critique critiqueId="crit_1">
-            <texte>vraiment geniale</texte>
+            <texte>Film géniale, révolutionne le genre et apporte une nouvelle horizon au cinéma</texte>
             <note>10</note>
         </critique>
         <critique critiqueId="crit_2">
-            <texte>Pas top</texte>
+            <texte>Mauvais, bannale, anti-fun... Bref j'aurais mieux fais de rester chez moi.</texte>
             <note>4</note>
         </critique>
     </critiques>
