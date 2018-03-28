@@ -1,11 +1,11 @@
 \documentclass[a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[french]{babel}
+%\usepackage[french]{babel}
 \usepackage{listings}
 \usepackage{color}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
-\usepackage{titlesec}
+%\usepackage{titlesec}
 \usepackage{tikz}
 \usetikzlibrary{trees}
 \usetikzlibrary{decorations.pathmorphing}
@@ -269,6 +269,9 @@ Les noeuds colorés correspondent à des Id (ID et FK liés selon la couleur).
 \section{JSON}
 \subsection{Graph JSON}
 
+\subsubsection{Explication graphiques}
+
+
 \begin{center}
 	\begin{tikzpicture}[
 	attribut/.style={rectangle,draw,fill=green!20},
@@ -288,8 +291,7 @@ Les noeuds colorés correspondent à des Id (ID et FK liés selon la couleur).
 			child { node[normal] {TitreFilm} [normal]}
 			child { node[normal] {DateProjection} [normal]}
 			child { node[normal] {Acteurs} [normal]
-				child { node[normal] {1er Role} [normal]}
-				child { node[normal] {2eme Role} [normal]}
+				child { node[normal] {acteurProj} [normal]}
 			}
 		}
 	};
