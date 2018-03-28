@@ -9,7 +9,7 @@
             <filmProj filmId="film_1"/>
             <acteursProj>
                 <acteurProj acteurProjId="act_1" nomRole="principale" placeRole="1"/>
-                <acteurProj acteurProjId="act_2" nomRole="secondaire" placeRole="1"/>
+                <acteurProj acteurProjId="act_2" nomRole="secondaire" placeRole="2"/>
             </acteursProj>
         </projection>
 
@@ -19,7 +19,7 @@
             <filmProj filmId="film_2"/>
             <acteursProj>
                 <acteurProj acteurProjId="act_1" nomRole="principale" placeRole="1"/>
-                <acteurProj acteurProjId="act_2" nomRole="secondaire" placeRole="1"/>
+                <acteurProj acteurProjId="act_2" nomRole="secondaire" placeRole="2"/>
             </acteursProj>
         </projection>
     </projections>
@@ -46,7 +46,7 @@
 
         <film filmId="film_2">
             <titre>Inception</titre>
-            <synopsis>Dans un futur proche, les États-Unis ont développé ce qui est appelé le « rêve partagé », une méthode permettant d'influencer l'inconscient d'une victime pendant qu'elle rêve,</synopsis>
+            <synopsis>Dans un futur proche, les Etats-Unis ont developpe ce qui est appele le "reve partage", une methode permettant d'influencer l'inconscient d'une victime pendant qu'elle reve,</synopsis>
             <duree>148</duree>
             <critiqueFilm critiqueFilmId='crit_1'/>
             <genresFilm>
@@ -76,7 +76,7 @@
         <acteur acteurId='act_2'>
             <nom>Emily Mortimero</nom>
             <nomNaissance>Mortimer</nomNaissance>
-            <biographie>Emily Mortimer est née à Finsbury Park, à Londres</biographie>
+            <biographie>Emily Mortimer est nee a Finsbury Park, e Londres</biographie>
             <sexe type="feminin"/>
             <dateNaissance>1.12.1971</dateNaissance>
             <dateDeces></dateDeces>
@@ -115,7 +115,7 @@
 
     <critiques>
         <critique critiqueId="crit_1">
-            <texte>Film géniale, révolutionne le genre et apporte une nouvelle horizon au cinéma</texte>
+            <texte>Film geniale, revolutionne le genre et apporte une nouvelle horizon au cinema</texte>
             <note>10</note>
         </critique>
         <critique critiqueId="crit_2">

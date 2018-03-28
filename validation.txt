@@ -19,14 +19,40 @@ START DOCUMENT
                 ELEMENT: <acteursProj>
                     ELEMENT: <acteurProj
                        ATTR: acteurProjId	"act_1"
-                       ATTR: nomRole	"lolilol"
+                       ATTR: nomRole	"principale"
                        ATTR: placeRole	"1"
                     >
                     END_ELM: </>
                     ELEMENT: <acteurProj
                        ATTR: acteurProjId	"act_2"
-                       ATTR: nomRole	"lolilol"
+                       ATTR: nomRole	"secondaire"
+                       ATTR: placeRole	"2"
+                    >
+                    END_ELM: </>
+                END_ELM: </>
+            END_ELM: </>
+            ELEMENT: <projection>
+                ELEMENT: <dateProjection>
+                CHARS:   24-03-2018
+                END_ELM: </>
+                ELEMENT: <numeroSalle>
+                CHARS:   1
+                END_ELM: </>
+                ELEMENT: <filmProj
+                   ATTR: filmId	"film_2"
+                >
+                END_ELM: </>
+                ELEMENT: <acteursProj>
+                    ELEMENT: <acteurProj
+                       ATTR: acteurProjId	"act_1"
+                       ATTR: nomRole	"principale"
                        ATTR: placeRole	"1"
+                    >
+                    END_ELM: </>
+                    ELEMENT: <acteurProj
+                       ATTR: acteurProjId	"act_2"
+                       ATTR: nomRole	"secondaire"
+                       ATTR: placeRole	"2"
                     >
                     END_ELM: </>
                 END_ELM: </>
@@ -54,18 +80,10 @@ START DOCUMENT
                        ATTR: genreFilmId	"genre_1"
                     >
                     END_ELM: </>
-                    ELEMENT: <genreFilm
-                       ATTR: genreFilmId	"genre_2"
-                    >
-                    END_ELM: </>
                 END_ELM: </>
                 ELEMENT: <motsCleFilm>
                     ELEMENT: <motCleFilm
                        ATTR: motCleFilmId	"motCle_1"
-                    >
-                    END_ELM: </>
-                    ELEMENT: <motCleFilm
-                       ATTR: motCleFilmId	"motCle_2"
                     >
                     END_ELM: </>
                     ELEMENT: <motCleFilm
@@ -88,6 +106,49 @@ START DOCUMENT
                 >
                 END_ELM: </>
             END_ELM: </>
+            ELEMENT: <film
+               ATTR: filmId	"film_2"
+            >
+                ELEMENT: <titre>
+                CHARS:   Inception
+                END_ELM: </>
+                ELEMENT: <synopsis>
+                CHARS:   Dans un futur proche, les Etats-Unis ont developpe ce qui est appele le "reve partage", une methode permettant d'influencer l'inconscient d'une victime pendant qu'elle reve,
+                END_ELM: </>
+                ELEMENT: <duree>
+                CHARS:   148
+                END_ELM: </>
+                ELEMENT: <critiqueFilm
+                   ATTR: critiqueFilmId	"crit_1"
+                >
+                END_ELM: </>
+                ELEMENT: <genresFilm>
+                    ELEMENT: <genreFilm
+                       ATTR: genreFilmId	"genre_2"
+                    >
+                    END_ELM: </>
+                END_ELM: </>
+                ELEMENT: <motsCleFilm>
+                    ELEMENT: <motCleFilm
+                       ATTR: motCleFilmId	"motCle_2"
+                    >
+                    END_ELM: </>
+                    ELEMENT: <motCleFilm
+                       ATTR: motCleFilmId	"motCle_3"
+                    >
+                    END_ELM: </>
+                END_ELM: </>
+                ELEMENT: <langagesFilm>
+                    ELEMENT: <langageFilm
+                       ATTR: langageFilmId	"lang_2"
+                    >
+                    END_ELM: </>
+                END_ELM: </>
+                ELEMENT: <photo
+                   ATTR: url	"http://docr.iict.ch/imdb/xxxxxx.jpg"
+                >
+                END_ELM: </>
+            END_ELM: </>
         END_ELM: </>
         ELEMENT: <acteurs>
             ELEMENT: <acteur
@@ -100,17 +161,16 @@ START DOCUMENT
                 CHARS:   DiCaprio
                 END_ELM: </>
                 ELEMENT: <biographie>
-                CHARS:   coucou
+                CHARS:   Grandissant dans les quartiers populaires de Los Angeles tels que Los Feliz puis Hollywood
                 END_ELM: </>
                 ELEMENT: <sexe
                    ATTR: type	"masculin"
                 >
                 END_ELM: </>
                 ELEMENT: <dateNaissance>
-                CHARS:   1-1-2001
+                CHARS:   11.11.1974
                 END_ELM: </>
                 ELEMENT: <dateDeces>
-                CHARS:   2-1-2001
                 END_ELM: </>
             END_ELM: </>
             ELEMENT: <acteur
@@ -123,17 +183,16 @@ START DOCUMENT
                 CHARS:   Mortimer
                 END_ELM: </>
                 ELEMENT: <biographie>
-                CHARS:   coucou
+                CHARS:   Emily Mortimer est nee a Finsbury Park, e Londres
                 END_ELM: </>
                 ELEMENT: <sexe
                    ATTR: type	"feminin"
                 >
                 END_ELM: </>
                 ELEMENT: <dateNaissance>
-                CHARS:   1-1-2000
+                CHARS:   1.12.1971
                 END_ELM: </>
                 ELEMENT: <dateDeces>
-                CHARS:   2-1-2001
                 END_ELM: </>
             END_ELM: </>
         END_ELM: </>
@@ -142,21 +201,21 @@ START DOCUMENT
                ATTR: motCleId	"motCle_1"
             >
                 ELEMENT: <labelMc>
-                CHARS:   cool
+                CHARS:   Combat
                 END_ELM: </>
             END_ELM: </>
             ELEMENT: <motCle
                ATTR: motCleId	"motCle_2"
             >
                 ELEMENT: <labelMc>
-                CHARS:   dur a comprendre
+                CHARS:   humour
                 END_ELM: </>
             END_ELM: </>
             ELEMENT: <motCle
                ATTR: motCleId	"motCle_3"
             >
                 ELEMENT: <labelMc>
-                CHARS:   sympa
+                CHARS:   peur
                 END_ELM: </>
             END_ELM: </>
         END_ELM: </>
@@ -197,7 +256,7 @@ START DOCUMENT
                ATTR: critiqueId	"crit_1"
             >
                 ELEMENT: <texte>
-                CHARS:   vraiment geniale
+                CHARS:   Film geniale, revolutionne le genre et apporte une nouvelle horizon au cinema
                 END_ELM: </>
                 ELEMENT: <note>
                 CHARS:   10
@@ -207,7 +266,7 @@ START DOCUMENT
                ATTR: critiqueId	"crit_2"
             >
                 ELEMENT: <texte>
-                CHARS:   Pas top
+                CHARS:   Mauvais, bannale, anti-fun... Bref j'aurais mieux fais de rester chez moi.
                 END_ELM: </>
                 ELEMENT: <note>
                 CHARS:   4

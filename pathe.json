@@ -1,12 +1,20 @@
 {
   "Projections": [
     {
-      "projections": {
-        "TitreFilm": "blablabo",
-        "dateProjection": "blablabl",
+      "projection": {
+        "TitreFilm": "Shutter island",
+        "DateProjection": "28-02-2018",
         "Acteurs": {
-          "1er Role": "jean ives",
-          "2eme Role": "Marcus"
+          "1er Role": "Leonardo DiCaprio",
+          "2eme Role": "Emily Mortimera"
+        }
+    },
+      "projection": {
+        "TitreFilm": "Inception",
+        "DateProjection": "24-03-2018",
+        "Acteurs": {
+          "1er Role": "Leonardo DiCaprio",
+          "2eme Role": "Emily Mortimera"
         }
       }
     }
