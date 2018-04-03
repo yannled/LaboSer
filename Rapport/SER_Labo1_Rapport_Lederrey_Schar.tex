@@ -1,11 +1,11 @@
 \documentclass[a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[french]{babel}
+%\usepackage[french]{babel}
 \usepackage{listings}
 \usepackage{color}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
-\usepackage{titlesec}
+%\usepackage{titlesec}
 \usepackage{tikz}
 \usetikzlibrary{trees}
 \usetikzlibrary{decorations.pathmorphing}
@@ -89,6 +89,11 @@
 Ce rapport détail les mises en forme que nous avons choisie pour notre structure des documents XML et JSON. Nous illustrons notamment cette structure sous forme d'arbre avec un choix de couleurs différenciant chaque type d'élément.
 
 \section{XML}
+Pour la construction de notre DTD ainsi que notre template de fichier XML nous nous sommes basé sur la partie ``objectif'' du document de laboratoire ainsi que le schéma de base de données pour connaitre les cardinalités.\\
+Dans l'écriture de notre fichier nous avons privilégié l'utilisation des balises en lieu et place des attributs. La raison est que pour nous la lecture du document nous parait plus simple si nous privilégions les balises. Le parsing de nos fichiers et leur créations nous paraissent aussi plus simple si 
+nous utilisons des balises.\\
+\\
+Afin d'éviter de trop longs fichiers avec une balises générale ``projection'' reprenant ensuite tous les attributs à l'intérieur nous avons choisi d'utiliser des ``ID'' en séparant alors en bloc XML nos différents ``objets''.
 \subsection{Graph XML}
 \tikzset{
 	photon/.style={decorate, decoration={snake}, draw=green},
@@ -133,7 +138,7 @@ Les noeuds colorés correspondent à des Id (ID et FK liés selon la couleur).
 	\end{tikzpicture}
 \end{center}
 
-\vspace{170px}
+\newpage
 
 \begin{center}
 	\begin{tikzpicture}[
@@ -267,6 +272,7 @@ Les noeuds colorés correspondent à des Id (ID et FK liés selon la couleur).
 \lstinputlisting[language=json, caption={validation}]{../validation.txt}
 
 \section{JSON}
+Pour écrire notre template JSON, Nous n'avons pas fait de grands choix. Nous avons déterminé ``Projections'' comme un tableau de projection, ceux-ci étant des objets contenant un titre, une date ainsi qu'un objet ``Acteurs'' comprenant les deux roles.
 \subsection{Graph JSON}
 
 \begin{center}
