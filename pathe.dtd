@@ -12,7 +12,7 @@
                     <!ATTLIST acteurProj placeRole CDATA #IMPLIED>
 
         <!ELEMENT films (film*)>
-            <!ELEMENT film (titre, synopsis, duree, critiqueFilm, genresFilm, motsCleFilm, langagesFilm*, photo)>
+            <!ELEMENT film (titre, synopsis, duree, critiqueFilm?, genresFilm, motsCleFilm, langagesFilm*, photo)>
                 <!ATTLIST film filmId ID #REQUIRED>
                 <!ELEMENT titre (#PCDATA)>
                 <!ELEMENT synopsis (#PCDATA)>
@@ -38,7 +38,7 @@
             <!ELEMENT nomNaissance (#PCDATA)>
             <!ELEMENT biographie (#PCDATA)>
             <!ELEMENT sexe (#PCDATA)>
-            <!ATTLIST sexe type (masculin|feminin|transgenre|shemale) #REQUIRED>
+            <!ATTLIST sexe type (MASCULIN|FEMININ|TRANSGENRE|SHEMALE) #REQUIRED>
             <!ELEMENT dateNaissance (#PCDATA)>
             <!ELEMENT dateDeces (#PCDATA)>
 
